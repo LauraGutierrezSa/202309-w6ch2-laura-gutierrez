@@ -5,12 +5,14 @@ class Character {
   constructor(characterCast) {
     this.characterCast = characterCast;
   }
+
   communicate() {
     return `${this.characterCast.name} says: `;
   }
+
   die() {
     this.isAlive = false;
   }
 }
+
 export default Character;
-//# sourceMappingURL=Character.js.map
