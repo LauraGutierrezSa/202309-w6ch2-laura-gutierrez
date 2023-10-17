@@ -1,3 +1,4 @@
+/* eslint-disable spaced-comment */
 class Character {
   name;
 }
