@@ -1,4 +1,4 @@
-import type CharacterCast from "./CharacterCast.js";
+import { type CharacterCast } from "../characterInterfaces/CharacterCast.js";
 
 abstract class Character {
   protected isAlive: boolean;
