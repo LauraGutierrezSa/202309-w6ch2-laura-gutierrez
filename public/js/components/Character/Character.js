@@ -2,6 +2,7 @@ class Character {
   isAlive;
   series;
   characterCast;
+
   constructor(characterCast) {
     this.characterCast = characterCast;
   }
@@ -14,5 +15,4 @@ class Character {
     this.isAlive = false;
   }
 }
-
 export default Character;
