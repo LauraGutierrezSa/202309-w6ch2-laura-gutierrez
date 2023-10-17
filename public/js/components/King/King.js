@@ -3,4 +3,3 @@ class King extends Character {
   weapon;
 }
 export default King;
-//# sourceMappingURL=King.js.map
