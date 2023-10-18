@@ -24,4 +24,5 @@ export class Fighter extends Character {
     return skills;
   }
 }
+
 export default Fighter;
