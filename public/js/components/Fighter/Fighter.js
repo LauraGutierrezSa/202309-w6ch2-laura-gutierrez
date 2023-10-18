@@ -2,7 +2,6 @@ import Character from "../Character/Character";
 export class Fighter extends Character {
   weapon;
   skills;
-
   constructor(data, weapon, skills) {
     super(data);
     this.weapon = weapon;
@@ -25,3 +24,4 @@ export class Fighter extends Character {
     return skills;
   }
 }
+export default Fighter;
