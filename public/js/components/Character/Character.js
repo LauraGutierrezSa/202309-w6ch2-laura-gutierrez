@@ -2,6 +2,7 @@ class Character {
   isAlive;
   series;
   characterCast;
+
   constructor(characterCast) {
     this.characterCast = characterCast;
   }
