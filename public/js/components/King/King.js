@@ -5,9 +5,10 @@ class King extends Character {
     super(data);
     this.yearsOfReign = yearsOfReign;
   }
+
   communicate() {
     return `${super.communicate()}Everybody will die`;
   }
 }
 export default King;
-//# sourceMappingURL=King.js.map
+// # sourceMappingURL=King.js.map
