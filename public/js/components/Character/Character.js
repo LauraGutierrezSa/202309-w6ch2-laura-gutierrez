@@ -15,4 +15,5 @@ class Character {
     this.isAlive = false;
   }
 }
+
 export default Character;

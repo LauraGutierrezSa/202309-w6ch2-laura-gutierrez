@@ -3,6 +3,7 @@ import Fighter from "../Fighter/Fighter";
 export class Squire extends Character {
   assKissingLevel;
   serves;
+
   constructor(characterCast, assKissingLevel, serves) {
     super(characterCast);
     this.assKissingLevel = this.assKissingFilter(assKissingLevel);
@@ -27,4 +28,3 @@ export class Squire extends Character {
     return assKissingLevel;
   }
 }
-// # sourceMappingURL=Squire.js.map
