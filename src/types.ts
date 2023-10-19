@@ -22,6 +22,6 @@ export interface FighterData extends CharacterData {
 }
 
 export interface SquireData extends CharacterData {
-  kissAssLevel: number;
+  assKissingLevel: number;
   serves: Fighter;
 }
