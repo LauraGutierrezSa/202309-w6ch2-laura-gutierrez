@@ -1,11 +1,11 @@
 import Character from "../Character/Character";
-import type { CharacterCast } from "../characterInterfaces/CharacterCast";
+import type { CharacterData } from "../characterInterfaces/CharacterCast";
 
 export class Fighter extends Character {
   weapon: string;
   skills: number;
 
-  constructor(data: CharacterCast, weapon: string, skills: number) {
+  constructor(data: CharacterData, weapon: string, skills: number) {
     super(data);
     this.weapon = weapon;
     this.skills = this.filterSkills(skills);

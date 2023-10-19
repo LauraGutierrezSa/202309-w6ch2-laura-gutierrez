@@ -1,11 +1,11 @@
-import { type CharacterCast } from "../characterInterfaces/CharacterCast.js";
+import { type CharacterData } from "../characterInterfaces/CharacterCast.js";
 
 abstract class Character {
   protected isAlive: boolean;
   protected series: string;
   private readonly characterCast;
 
-  constructor(characterCast: CharacterCast) {
+  constructor(characterCast: CharacterData) {
     this.characterCast = characterCast;
   }
 

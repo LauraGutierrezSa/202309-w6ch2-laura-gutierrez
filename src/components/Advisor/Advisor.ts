@@ -1,10 +1,10 @@
 import Character from "../Character/Character";
-import type { CharacterCast } from "../characterInterfaces/CharacterCast";
+import type { CharacterData } from "../characterInterfaces/CharacterCast";
 
 class Advisor extends Character {
   advises;
 
-  constructor(characterCast: CharacterCast, advises: Character) {
+  constructor(characterCast: CharacterData, advises: Character) {
     super(characterCast);
 
     if (advises instanceof Character) {

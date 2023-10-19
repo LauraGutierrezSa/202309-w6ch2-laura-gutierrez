@@ -1,20 +1,19 @@
-import Character from "../Character/Character";
-import Fighter from "../Fighter/Fighter";
-import type { CharacterCast } from "../characterInterfaces/CharacterCast";
-
+import Character from "../Character/Character.js";
+import Fighter from "../Fighter/Fighter.js";
+import type { SquireData } from "../../types.js";
 export class Squire extends Character {
-  assKissingLevel: number;
-  serves: string;
+  assKissingLevel;
+  serves;
 
-  constructor(
-    characterCast: CharacterCast,
-    assKissingLevel: number,
-    serves: Fighter,
-  ) {
-    super(characterCast);
-    this.assKissingLevel = this.assKissingFilter(assKissingLevel);
+  constructor(data: SquireData) {
+    super(data);
+    this.assKissingLevel = this.assKissingFilter(data.assKissingLevel);
 
-    if (!(serves instanceof Fighter)) {
+    if (data.serves instanceof Fighter) {
+      this.serves = data.serves;
+    }
+
+    if (!(this.serves instanceof Fighter)) {
       throw new Error("A squire can only serve a Fighter.");
     }
   }
@@ -23,7 +22,7 @@ export class Squire extends Character {
     return `${super.communicate()} I'm a loser :(`;
   }
 
-  private assKissingFilter(assKissingLevel: number) {
+  private assKissingFilter(assKissingLevel: number): number {
     if (assKissingLevel < 0) {
       return 0;
     }
