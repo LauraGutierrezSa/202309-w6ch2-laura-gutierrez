@@ -1,5 +1,5 @@
 import Character from "../Character/Character";
-import type { CharacterData } from "../characterInterfaces/CharacterCast";
+import type { CharacterData } from "../../types.js";
 
 export class Fighter extends Character {
   weapon: string;
