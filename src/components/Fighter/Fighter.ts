@@ -3,12 +3,12 @@ import type { CharacterData } from "../../types.js";
 
 export class Fighter extends Character {
   weapon: string;
-  skills: number;
+  dexterity: number;
 
   constructor(data: CharacterData, weapon: string, skills: number) {
     super(data);
     this.weapon = weapon;
-    this.skills = this.filterSkills(skills);
+    this.dexterity = this.filterSkills(skills);
   }
 
   communicate() {
