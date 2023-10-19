@@ -1,21 +1,25 @@
 import Character from "../Character/Character";
 import Fighter from "../Fighter/Fighter";
-import type { CharacterCast } from "../characterInterfaces/CharacterCast";
+import { type CharacterData } from "../../types";
 
 export class Squire extends Character {
   assKissingLevel: number;
-  serves: string;
+  serves;
 
   constructor(
-    characterCast: CharacterCast,
+    characterData: CharacterData,
     assKissingLevel: number,
-    serves: Fighter,
+    this.serves = characterData.serves
   ) {
-    super(characterCast);
+    super(characterData);
     this.assKissingLevel = this.assKissingFilter(assKissingLevel);
 
     if (!(serves instanceof Fighter)) {
       throw new Error("A squire can only serve a Fighter.");
+    }
+
+    if (serves instanceof Fighter) {
+      this.serves = serves;
     }
   }
 
